@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: hessian;
+    src: url(../fonts/Hessian.otf);
+}
+
+:root {
+    --texto1: "Roboto", sans-serif;
+    --texto2: "Playfair Display", serif;
+    --texto3: "Bebas Neue", sans-serif;
+    --texto_logo: "hessian";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Inicia parte hero o encabezado */
+
+.hero {
+    background-image: url(/img/fondo-hero3.jpg);
+    background-position: top;
+}
+
+.hero__nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    padding-bottom: 1;
+}
+
+.hero__nav .logo {
+    width: 110px;
+}
+
+.hero__navderecho {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: .5rem
+}
+
+.abrir__menu,
+.cerrar__menu{
+    color: antiquewhite;
+    font-size: 35px;
+    display: none;
+    cursor: pointer;
+    padding-right: 10px ;
+}
+
+.hero__navderecho .contacto {
+    font-family: var(--texto1);
+    font-weight: 800;
+    font-size: 1.5em;
+    color: aliceblue;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-right: 10px;
+}
+
+.hero__navderecho .bi-whatsapp {
+    font-size: 2rem;
+    color: #25D366;
+}
+
+.hero__menu {
+    list-style: none;
+    font-family: var(--texto3);
+    font-weight: 300;
+    font-size: 1.4em;
+    color: blanchedalmond;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    letter-spacing: 2px;
+}
+
+.hero__menu .bi {
+    margin-right: 5px;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: antiquewhite;
+    border-radius: 10px;
+    display: block;
+    padding: 10px;
+    transition: .5s;
+}
+
+.menu__link:hover {
+    background-color: #b40505;
+}
+
+.hero__main {
+    max-width: 1200;
+    padding: 2em;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.hero__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+
+.hero__text h2 {
+    color: aliceblue;
+    text-align: center;
+    font-family: var(--texto_logo);
+    font-size: 5rem;
+    text-shadow: 5px 5px 3px red;
+}
+
+.hero__text h4 {
+    margin: 0 auto;
+    color: #ffffff;
+    font-family: var(--texto_logo);
+    font-weight: 300;
+    font-size: 1.8rem;
+    border: 2px dashed red;
+    width: max-content;
+    padding: 0.6rem;
+}
+
+
+.hero__img {
+    width: 450px;
+    padding-block: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__img img {
+    max-width: 100%;
+    object-fit:contain;
+}
+
+/* finaliza parte hero o encabezado */
+
+/* Inicia Grid */
+
+.grid {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr, 1fr;
+    grid-template-areas:
+        "item1 item2"
+        "item1 item3";
+    gap: 2rem;
+}
+
+.grid__item {
+    border-radius: 1rem;
+    color: #ffffff;
+    background-image: url(../img/wmremove-transformed.jpeg);
+    background-size: cover;
+    background-position: center center;
+    padding: 1rem;
+    box-shadow: -10px 10px 10px black;
+}
+
+.grid__item h5, h4 {
+    padding: 5px;
+    font-family: var(--texto2);
+    font-weight: 300;
+}
+
+.grid__item h5 {
+    font-size: 1.1rem;
+    text-align: right;
+}
+
+
+.grid__item h4 {
+    font-size: 1.3rem;
+}
+
+.grid__item1 {
+    grid-area: item1;
+}
+
+.grid__item2 {
+    grid-area: item2;
+}
+
+.grid__item3 {
+    grid-area: item3;
+}
+
