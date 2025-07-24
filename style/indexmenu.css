@@ -21,7 +21,7 @@
 /* Inicia parte hero o encabezado */
 
 .hero {
-    background-image: url(/img/fondo-hero3.jpg);
+    background-image: url(../img/fondo-hero3.jpg);
     background-position: top;
 }
 
