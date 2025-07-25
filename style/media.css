@@ -76,8 +76,12 @@
         justify-content: space-between;
     }
 
+    .hero__text{
+        width: 100%;
+    }
+
     .hero__text h2 {
-        font-size: 3.4rem;
+        font-size: 3rem;
     }
 
     .hero__text h4 {
@@ -104,6 +108,15 @@
             "item2"
             "item3";
         gap: 2rem;
+    }
+
+    .text__box--title{
+        font-size: 50px;
+    }
+    
+    .text__box--parrafo{
+        font-size: 20px;
+        line-height: 25px;
     }
 
 }
