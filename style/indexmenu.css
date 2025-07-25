@@ -161,6 +161,14 @@
     gap: 2rem;
 }
 
+.text__box--title{
+        font-size: 80px;
+    }
+    
+    .text__box--parrafo{
+        font-size: 23px;
+    }
+
 .grid__item {
     border-radius: 1rem;
     color: #ffffff;
