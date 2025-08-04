@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="style/indexmenu.css">
-    <link rel="stylesheet" href="./style/media.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <title>BASTARDOS NACIÓN MC</title>
 </head>
@@ -15,37 +14,39 @@
 
 
     <section class="hero">
-        <header class="hero__nav">
-            <div class="hero__logo">
+        <header class="hero__header">
+            <div class="hero__nav-izquierdo">
                 <img src="./img/craneo.png" alt="" class="logo">
             </div>
-            
-            <div class="hero__navderecho">
+
+            <div class="hero__nav-derecho">
                 <p class="contacto">
                     <i class="bi bi-whatsapp"></i> Contacto
                 </p>
                 <i class="bi bi-list abrir__menu" id="abrir"></i>
+
                 <nav class="navegador" id="navegador">
-                    <i class="bi bi-x-circle-fill cerrar__menu" id="cerrar" ></i>
+                    <i class="bi bi-x-circle-fill cerrar__menu" id="cerrar"></i>
                     <ul class="hero__menu">
-                        <li class="menu__item"><a class="menu__link" href="#"><i class="bi bi-house-fill"></i>Home</a>
+                        <li class="menu__item"><a href="#" class="menu__link"><i class="bi bi-house-fill"></i>Home</a>
                         </li>
-                        <li class="menu__item"><a class="menu__link" href="#"><i
+                        <li class="menu__item"><a href="#rodadas" class="menu__link"><i
                                     class="bi bi-speedometer"></i>Rodadas</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#"><i class="bi bi-houses-fill"></i>Casa
+                        <li class="menu__item"><a href="#" class="menu__link"><i class="bi bi-houses-fill"></i>Casa
                                 Club</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#"><i
+                        <li class="menu__item"><a href="#" class="menu__link"><i
                                     class="bi bi-calendar-event"></i>Eventos</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
+        
         <main class="hero__main">
             <div class="hero__text">
                 <h2>BASTARDOS <br> NACIÓN MC</h2>
                 <h4>QUE SE JODA EL MUNDO</h4>
             </div>
-            
+
             <div class="hero__img">
                 <img src="./img/bastardos_1080.png" alt="">
             </div>
@@ -55,27 +56,42 @@
     <section class="grid">
         <div class="grid__item grid__item1">
             <h5 class="text__box--title">UN POCO DE NUESTRA HISTORIA</h5>
-            <p class="text__box--parrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque architecto aliquam fugit est numquam
+            <p class="text__box--parrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque architecto
+                aliquam fugit est numquam
                 exercitationem similique. Omnis, mollitia atque? Deleniti reiciendis unde officiis doloremque nisi sint,
                 quos illum. Aspernatur aliquid perspiciatis ?
             </p>
         </div>
         <div class="grid__item grid__item2">
             <h5 class="text__box--title">PRINCIPIOS</h5>
-            <p class="text__box--parrafo"> Fomentar en todos los miembros del MC la pasión y el gusto por el motociclismo, la amistad
+            <p class="text__box--parrafo"> Fomentar en todos los miembros del MC la pasión y el gusto por el
+                motociclismo, la amistad
                 y confianza entre sí y con la sociedad, procurando un ambiente de hermandad y
                 camaradería.
             </p>
         </div>
         <div class="grid__item grid__item3">
             <h5 class="text__box--title">BASTARDOS NACIÓN MC</h5>
-            <p class="text__box--parrafo"> Nacido el 7 de Marzo del 2020. <br> "LA LEALTAD DE LA HERMANDAD" 
-        </p>
+            <p class="text__box--parrafo"> Nacido el 7 de Marzo del 2020. <br> "LA LEALTAD DE LA HERMANDAD"
+            </p>
+        </div>
+    </section>
+
+    <section class="rodadas" id="rodadas">
+        <h2 class="rodadas__titulo">Rodadas</h2>
+        <div class="contenedor__tarjetas-rodadas">
+            <div tarjeta__rodadas>
+                <h3 tarjeta__titulo> ANIVERSARIO BASTARDOS</h3>
+                <img src="./img/motito.png" alt="" class="tarjeta__img">
+                <p class="tarjeta__descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, quaerat!
+                </p>
+            </div>
+
         </div>
     </section>
 
 
-<script src="./js/menu.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
