@@ -26,7 +26,7 @@ html {
 
 .hero {
     background-image: url(../img/fondo-hero3.jpg);
-    background-position: top;
+    background-position: center center;
 }
 
 .hero__header {
@@ -42,6 +42,12 @@ html {
         .logo {
             width: 100%;
             object-fit: cover;
+        }
+
+        & {
+            @media screen and (max-width: 500px) {
+                width: 80px;
+            }
         }
     }
 
@@ -77,12 +83,6 @@ html {
             flex-wrap: nowrap;
             gap: 10px;
             letter-spacing: 2px;
-
-            & {
-                @media screen and (max-width: 500px) {
-                    flex-direction: column;
-                }
-            }
 
             .bi {
                 margin-right: 5px;
@@ -120,6 +120,7 @@ html {
             font-size: clamp(23px, 10vw, 130px);
             color: aliceblue;
             font-family: var(--texto_logo);
+            font-weight: 200;
             text-shadow: 5px 5px 3px red;
         }
 
@@ -141,7 +142,7 @@ html {
         align-items: center;
 
         img {
-            width: clamp(200px, 40vw, 500px);
+            width: clamp(250px, 40vw, 500px);
             object-fit: cover;
         }
     }
@@ -235,11 +236,48 @@ h4 {
 
 /******* Inicia tarjetitas***********/
 .rodadas {
-    background-color: #b40505;
+    scroll-margin-top: 10px;
     margin: 0 auto;
     width: 100%;
     max-width: 1200px;
 
+    .rodadas__titulo {
+        text-align: center;
+        font-size: 50px;
+        font-family: var(--texto_logo);
+        color: #b40505;
+        padding-top: 10px;
+    }
+
+    .contenedor__tarjetas-rodadas {
+        padding-block: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .tarjeta__rodadas {
+            width: auto;
+            height: 400px;
+            max-width: 300px;
+            background-color: #000000;
+            border-radius: 10px;
+            color: wheat;
+            text-align: center;
+            padding: 15px;
+            margin-top: 25px;
+            display: flex;
+            flex-direction: column ;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .tarjeta__img {
+            max-width: 250px;
+            object-fit:contain;
+        }
+    }
 }
 
 
